@@ -1,5 +1,7 @@
-package it.shadow;
+package it.shadow.events4j.argument;
 
+import it.shadow.events4j.argument.Argument;
+import it.shadow.events4j.argument.Arguments;
 import org.junit.Test;
 
 import java.util.Arrays;

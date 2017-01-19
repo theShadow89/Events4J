@@ -1,11 +1,11 @@
-package it.shadow;
+package it.shadow.events4j.argument;
 
 
 import java.util.*;
 
 
 /**
- * Event Arguments.The arguments of an event.
+ * Event Arguments.The argument of an event.
  */
 public final class Arguments {
 
@@ -46,7 +46,7 @@ public final class Arguments {
     }
 
     /**
-     * Return the number of arguments
+     * Return the number of argument
      */
     public int size() {
         return arguments.size();
@@ -63,7 +63,7 @@ public final class Arguments {
         private List<Argument> arguments = new ArrayList<>();;
 
         /**
-         * Add argument to arguments.
+         * Add argument to argument.
          */
         public Builder addArgument(Argument argument){
             arguments.add(argument);
@@ -75,7 +75,7 @@ public final class Arguments {
         }
 
         /**
-         * Set arguments. Previous set arguments will be overwritten
+         * Set argument. Previous set argument will be overwritten
          */
         public Builder setArguments(Argument... args) {
             this.arguments = Arrays.asList(args);

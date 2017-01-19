@@ -1,5 +1,6 @@
-package it.shadow;
+package it.shadow.events4j.argument;
 
+import it.shadow.events4j.argument.Argument;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

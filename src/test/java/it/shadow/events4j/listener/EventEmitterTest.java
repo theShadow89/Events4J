@@ -1,5 +1,9 @@
-package it.shadow;
+package it.shadow.events4j.listener;
 
+import it.shadow.events4j.argument.Argument;
+import it.shadow.events4j.argument.Arguments;
+import it.shadow.events4j.EventEmitter;
+import it.shadow.events4j.listener.EventListener;
 import org.junit.Before;
 import org.junit.Test;
 

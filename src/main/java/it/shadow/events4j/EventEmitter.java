@@ -1,5 +1,8 @@
-package it.shadow;
+package it.shadow.events4j;
 
+
+import it.shadow.events4j.argument.Arguments;
+import it.shadow.events4j.listener.EventListener;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -55,31 +58,31 @@ public class EventEmitter {
     }
 
     /**
-     * Execute listeners associated with event name.
+     * Execute listener associated with event name.
      *
-     * @param event the event name to execute listeners
+     * @param event the event name to execute listener
      */
     public EventEmitter emit(String event,Arguments args) {
         ConcurrentLinkedQueue<EventListener> eventListeners = listeners.get(event);
-        //there are listeners for event?
+        //there are listener for event?
         if(eventListeners != null){//yes
-            //call all listeners
+            //call all listener
             eventListeners.forEach(l -> l.call(args));
         }
         return this;
     }
 
     /**
-     * Execute listeners associated with event name.
+     * Execute listener associated with event name.
      *
-     * @param event the event name to execute listeners
+     * @param event the event name to execute listener
      */
     public EventEmitter emit(String event) {
         return emit(event,null);
     }
 
     /**
-     * Removes listener from the listeners for the event
+     * Removes listener from the listener for the event
      * @param event name of event
      * @param listener listener to remove
      * @return
@@ -93,7 +96,7 @@ public class EventEmitter {
     }
 
     /**
-     * Return the number of listeners for the events
+     * Return the number of listener for the events
      *
      * @param event event name
      */

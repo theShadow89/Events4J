@@ -1,4 +1,4 @@
-package it.shadow;
+package it.shadow.events4j.argument;
 
 /**
  * Event Argument. An event argument has a name to identify it and a value.
